@@ -10,10 +10,10 @@ public class DemoAppApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(DemoAppApplication.class, args);
 
-		//Hello comp = new Hello();
+		//Hello dev = new Hello();
 
-		Computer comp = context.getBean(Computer.class);
-		comp.greet();
+		Dev dev = context.getBean(Dev.class);
+		dev.greet();
 
 	}
 
